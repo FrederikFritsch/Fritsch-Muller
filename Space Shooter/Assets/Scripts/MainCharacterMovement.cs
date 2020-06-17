@@ -18,9 +18,23 @@ private Rigidbody2D rb;
     // Update is called once per frame
     void FixedUpdate()
     {
+        
+        if(Input.GetKey(KeyCode.D))
+         {
+            rb.transform.position += Vector3.right * speed * Time.deltaTime;
+            
+         }
+         else if(Input.GetKey(KeyCode.A))
+         {
+            rb.transform.position += Vector3.right * -speed * Time.deltaTime;
+             
+         }
+        
+        
+        
+        /*
         //Store the current horizontal input in the float moveHorizontal.
         float xInput = Input.GetAxis ("Horizontal");
-        Debug.Log("xInput = "+ xInput);
         
         if(-0.3 <= xInput && xInput <= 0.3) {
                 rb.velocity = rb.velocity*breakSpeed;
@@ -31,6 +45,6 @@ private Rigidbody2D rb;
             Vector2 movement = new Vector2 (xForce, 0);
             rb.AddForce(movement);
             }
-        } 
+        } */
     }
 }

@@ -13,7 +13,7 @@ public class SpawnBats : MonoBehaviour
     }
 
     void spawnBat() {
-        position = new Vector3(Random.Range(-8.0f, 8.0f), 5.0f, 0.0f);
+        position = new Vector3(Random.Range(-8.0f, 8.0f), 10.0f, 0.0f);
         Instantiate(batPrefab, position, Quaternion.identity);
     }
 }
