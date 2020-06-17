@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4802598547012775386}
   - component: {fileID: 6653051360789976159}
   - component: {fileID: 618056880036031436}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 1
